@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gilded Spoon</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed-header">
+      <nav class="container nav-container">
+        <a href="" class="brand-logo"
+          ><img src="./Image/logo.png" alt="" />Gilded Spoon</a
+        >
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="#contact" class="nav-btn-desktop">Book a Table</a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#menu" class="mobile-nav-link">Menu</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="mobile-nav-btn">Book a Table</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <video autoplay loop muted playsinline src="./hero-vid.mp4"></video>
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="2000">
+        <li>Art of Dining</li>
+        <h1>Dining redefined with <span>every bite</span></h1>
+        <p>
+          Immerse yourself in a culinary journey where every dish is a masterpiece,
+          crafted with passion and precision to delight your senses. Experience the
+          art of dining like never before at The Gilded Spoon.
+        </p>
+        <a href="#menu" class="hero-btn">Discover Our Menu</a>
+      </div>
+    </section>
+
+    <main>
+      <!-- About Us Section -->
+      <section id="about" class="section">
+        <div class="container grid-container about-grid">
+          <div class="about-text" data-aos="fade-up-right" data-aos-duration="2000">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">A Tradition of Taste</h2>
+            <p>
+              Founded in 2010, The Gilded Spoon has been a beacon of culinary
+          excellence. Our mission is to provide an unforgettable dining experience
+          that combines exquisite flavors, exceptional service, and a warm,
+          inviting atmosphere.
+            </p>
+            <p>
+              A team of world-class chefs, each bringing their unique flair and
+              expertise, crafts a diverse menu that celebrates both classic and
+              contemporary cuisine. We source the finest ingredients, ensuring that
+              every dish is a testament to quality and creativity.
+            </p>
+            <div class="about-btns">
+              <a href="" class="nav-btn-desktop">Order Now</a>
+              <a href="" class="nav-btn-desktop nav-btn-desktop-white"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="about-image-wrapper" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="200">
+            <img src="./Image/about-us.jpg" alt="" class="about-image" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="menu" class="section bg-white">
+        <div class="container text-center">
+          <div>
+            <p class="section-subtitle" data-aos="flip-up" data-aos-duration="2000">Our Menu</p>
+            <h2 class="section-title" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">Satisfy Your Cravings</h2>
+            <p class="section-description" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="200">
+              Dive into a world of flavors with our diverse menu, crafted to
+              satisfy every craving. From appetizers to desserts, each dish is a
+              culinary masterpiece.
+            </p>
+          </div>
+          <div class="grid-container menu-grid">
+            <!-- Menu 1 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+              <img src="./Image/menu-1.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Tuscan Bruschetta</h3>
+              <p class="menu-item-description">
+                Grilled ciabatta bread with fresh tomatoes, garlic, basil, and a
+                balsamic glaze.
+              </p>
+              <p class="menu-item-price">$14</p>
+            </div>
+            <!-- Menu 2 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+              <img src="./Image/menu-2.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Pan-Seared Salmon</h3>
+              <p class="menu-item-description">
+                Served with a lemon-dill sauce, roasted asparagus, and wild rice
+                pilaf.
+              </p>
+              <p class="menu-item-price">$28</p>
+            </div>
+            <!-- Menu 3 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
+              <img src="./Image/menu-3.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Classic Tiramisu</h3>
+              <p class="menu-item-description">
+                Espresso-soaked ladyfingers layered with a creamy mascarpone
+                mixture.
+              </p>
+              <p class="menu-item-price">$12</p>
+            </div>
+            <!-- Menu 4 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
+              <img src="./Image/menu-4.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Ribeye Steak Frites</h3>
+              <p class="menu-item-description">
+                12oz prime ribeye with a red wine reduction, served with truffle
+                paresan fries
+              </p>
+              <p class="menu-item-price">$42</p>
+            </div>
+            <!-- Menu 5 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700">
+              <img src="./Image/menu-5.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Lobster Ravioli</h3>
+              <p class="menu-item-description">
+                Handmade pasta filled with lobster meat in a creamy saffron
+                sauce.
+              </p>
+              <p class="menu-item-price">$32</p>
+            </div>
+            <!-- Menu 6 -->
+            <div class="menu-item" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800">
+              <img src="./Image/menu-6.jpg" alt="" class="menu-item-img" />
+              <h3 class="menu-item-title">Smoked Old Fashion</h3>
+              <p class="menu-item-description">
+                Bourbon, bitters, and a hint of orange, smoked with applewood
+                chips.
+              </p>
+              <p class="menu-item-price">$18</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chef's Section -->
+      <section id="chefs" class="section chefs-section">
+        <div class="container text-center">
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="2000">Chefs</p>
+          <h1 class="section-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">Meet Our Chefs</h1>
+          <p class="section-description" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+            Our chefs are the heart of The Gilded Spoon, bringing passion,
+            creativity, and expertise to every dish they create. Get to know the
+            culinary artists behind your favorite meals.
+          </p>
+          <div class="grid-container chef-grid">
+            <!-- Chef 1 -->
+            <div class="chef-card" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
+              <img src="./Image/chef-1.jpg" alt="" class="chef-image" />
+              <h2 class="chef-name">Chef Emmanuel Ad</h2>
+              <p class="chef-title">Head Chef</p>
+              <p class="chef-bio">
+                With over 15 years of culinary experience, Chef Emmanuel brings
+                a fusion of traditional and modern flavors to our kitchen. His
+                passion for fresh, local ingredients shines through in every
+                dish he creates.
+              </p>
+            </div>
+            <!-- Chef 2 -->
+            <div class="chef-card" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+              <img src="./Image/chef-2.jpg" alt="" class="chef-image" />
+              <h2 class="chef-name">Chef Alexander Holm</h2>
+              <p class="chef-title">Head Chef</p>
+              <p class="chef-bio">
+                Alexander's expertise in European cuisine and his innovative
+                approach to plating make him a standout in the culinary world.
+                He is dedicated to crafting memorable dining experiences for
+                every guest.
+              </p>
+            </div>
+            <!-- Chef 3 -->
+            <div class="chef-card" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="700">
+              <img src="./Image/chef-3.jpg" alt="" class="chef-image" />
+              <h2 class="chef-name">Chef Eliza Iharra</h2>
+              <p class="chef-title">Head Chef</p>
+              <p class="chef-bio">
+                Eliza's culinary journey spans continents, bringing a rich
+                tapestry of flavors to our menu. Her commitment to
+                sustainability and creativity is evident in every dish she
+                prepares.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section bg-white">
+        <div class="container text-center">
+          <p class="section-subtitle" data-aos="fade-up" data-aos-duration="2000">Testimonials</p>
+          <h2 class="section-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">What Our Clients Say</h2>
+          <p class="section-description" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+            Discover why our clients love dining at The Gilded Spoon. Their
+            experiences and feedback inspire us to continually elevate our
+            service and culinary offerings.
+          </p>
+          <div class="grid-container testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500">
+              <img
+                src="./Image/testimonial-1.jpg"
+                alt=""
+                class="client-image"
+              />
+              <p class="testimonial-text">
+                "The ambiance was perfect, and the food was absolutely
+                delightful. I can't wait to come back!"
+              </p>
+              <h3 class="testimonial-author">- Sarah L.</h3>
+              <p class="testimonial-role">Franchise Owner</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="600">
+              <img
+                src="./Image/testimonial-2.jpg"
+                alt=""
+                class="client-image"
+              />
+              <p class="testimonial-text">
+                "Exceptional service and a menu that caters to all tastes. A
+                must-visit for food lovers!"
+              </p>
+              <h3 class="testimonial-author">- Mark D.</h3>
+              <p class="testimonial-role">Hotel Senior Manager</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="700">
+              <img
+                src="./Image/testimonial-3.jpg"
+                alt=""
+                class="client-image"
+              />
+              <p class="testimonial-text">
+                "From the appetizers to the dessert, every dish was a
+                masterpiece. Highly recommend!"
+              </p>
+              <h3 class="testimonial-author">- Emil R.</h3>
+              <p class="testimonial-role">Event Planner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Reservation Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="text-center">
+            <p class="section-subtitle" data-aos="zoom-in-up" data-aos-duration="2000">Reservation</p>
+            <h2 class="section-title" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200">Book Your Table</h2>
+            <p class="section-description" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
+              Come dine with us! Reserve your table online and enjoy an unforgettable
+              culinary experience at The Gilded Spoon.
+            </p>
+          </div>
+          <div class="grid-container contact-grid">
+            <form class="reservation-form" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="500">
+              <div class="form-row">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="custom-input"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  class="custom-input"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="tel"
+                  placeholder="Phone number"
+                  class="custom-input"
+                />
+                <input
+                  type="number"
+                  placeholder="Number of guests"
+                  class="custom-input"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <input type="date" class="custom-input" required />
+                <input type="time" class="custom-input" required />
+              </div>
+              <textarea
+                placeholder="Special Requests (optional)"
+                rows="4"
+                class="custom-input"
+              >
+              </textarea>
+              <button type="submit" class="submit-btn">Send Reservation</button>
+            </form>
+
+            <div class="contact-info" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
+              <div class="contact-info-title">Contact Information</div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <ion-icon
+                    name="location-outline"
+                    class="contact-icon"
+                  ></ion-icon>
+                  <div>
+                    <h4>Address</h4>
+                    <p>123 Culinary St, Flavor Central, AZ 85260</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                  <div>
+                    <h4>Phone</h4>
+                    <p>(623) 555-1685</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                  <div>
+                    <h4>Email</h4>
+                    <p>contact@thegildedspoon.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <ion-icon name="time-outline" class="contact-icon"></ion-icon>
+                  <div>
+                    <h4>Hours</h4>
+                    <p>Mon - Fri: 12pm - 8pm</p>
+                    <p>Sat - Sun: 12pm - 12am</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container text-center">
+        <a href="" class="brand-logo footer-logo"
+          ><img src="./Image/logo.png" alt="">Gilded Spoon</a
+        >
+        <div class="social-links">
+          <a href="#footer"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#footer"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#footer"><ion-icon name="logo-tiktok"></ion-icon></a>
+        </div>
+        <p>&copy; 2025 The Gilded Spoon. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
